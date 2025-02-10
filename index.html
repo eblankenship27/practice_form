@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Evan's Form</h1>
-    <p id="description">
-      This is a form used to practice working with HTML and CSS to build my foundamentals better.
-    </p>
+    <header>
+      <h1 id="title">Evan's Form</h1>
+      <p id="description">
+      This is a form used to practice working with <strong>HTML</strong> and <strong>CSS</strong> to build my foundamentals better.
+      </p>
+    </header>
     <form id="survey-form">
       <div id="p-info" class="form-section">
         <fieldset>
@@ -22,26 +24,45 @@
         <fieldset>
           <label>How did you get to this form? <select id="dropdown" required>
             <option disabled selected value="">(Select one)</option>
-            <option value="">Sent to me</option>
-            <option>Accessed from Website</option>
-            <option>Other</option>
+            <option value="sent">Sent to me</option>
+            <option value="accessed">Accessed from Website</option>
+            <option value="found">Found randomly</option>
+            <option value="other">Other</option>
           </select></label>
+          <p>Are you currently hiring?</p>
+          <label><input name="hiring" type="radio" />Yes</label>
+          <label><input name="hiring" type="radio" />No</label>
+          <label><input name="hiring" type="radio" />Not an employer</label>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>The Fun section!</legend>
+          <p>Coming soon</p>
         </fieldset>
       </div>
       <div id="form-rating" class="form-section">
         <fieldset>
           <legend>How do you like this survey?</legend>
-          <label><input type="radio" name="success" /></label>
-          <label><input type="radio" name="success" /></label> 
+          <label><input type="radio" name="success" />Its Great!</label>
+          <label><input type="radio" name="success" />Its good</label> 
+          <label><input type="radio" name="success" />Neautral</label> 
+          <label><input type="radio" name="success" />It could be better</label> 
+          <label><input type="radio" name="success" />Its Terriable!</label> 
+          <label>Give any suggestions for this form here:<textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="ex. 'Add different Themes!!'" ></textarea></label>
         </fieldset>
       </div>
-      <div id="suggestions" class="form-section">
+      <div id="next-project" class="form-section">
         <fieldset>
-          <legend></legend>
-          <label><input type="checkbox" /></label>
-          <label><input type="checkbox" /></label>
-          <label><textarea></textarea></label>
-        </fieldset>
+          <legend>Which projects should I make?</legend>
+          <label><input type="checkbox" />Calculator</label>
+          <label><input type="checkbox" />Painting!</label>
+          <label><input type="checkbox" />Quiz</label>
+          <label><input type="checkbox" />Finsh your portfolio!</label>
+          <label>Give any suggestions for what I should work on here: 
+            <textarea id="suggest-improve" name="suggest-improve" rows="3" cols="30"></textarea>
+          </label>
+        </fieldset> 
       </div>
       <input id="submit" type="submit" value="Submit" />
     </form>
