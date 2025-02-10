@@ -17,17 +17,47 @@ form {
     min-width: 400px;
     margin: auto;
     padding: 10px;
-    border: 1px solid green;
     
 }
 
 fieldset {
-    border: 1;
+    border: 0;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+    
 }
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #f1f1f1;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+
 
 input[type="submit"] {
     display: block;
     width: 60%;
     padding: 0.5rem;
-    
+    margin: 1em auto;
+    height: 3em;
+    font-size: 1.2em;
+    background-color: #3b3b4f;
+
 }
