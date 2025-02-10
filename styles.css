@@ -23,9 +23,8 @@ form {
 
 fieldset {
     border: 0;
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-bottom: 3px solid #3b3b4f;
-    
 }
 
 label {
@@ -42,6 +41,11 @@ input, textarea {
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
     color: #f1f1f1;
+}
+
+legend {
+    margin-top: 3;
+    padding-top: 5px;
 }
 
 .inline {
@@ -61,4 +65,8 @@ input[type="submit"] {
     font-size: 1.2em;
     background-color: #3b3b4f;
 
+}
+
+.expand {
+    margin-top: 1em;
 }
