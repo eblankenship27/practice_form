@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Something form</title>
+    <title>Evan's Practice Form</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -12,11 +12,11 @@
       This is a form used to practice working with <strong>HTML</strong> and <strong>CSS</strong> to build my foundamentals better.
       </p>
     </header>
-    <form id="survey-form">
+    <form id="survey-form" action="action_page.php" method="post">
       <div id="p-info" class="form-section">
         <fieldset>
           <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required /></label>
-          <label id="email-label">Email: <input type="email" id="email" placeholder="example@gmail.com" required /></label>
+          <label id="email-label">Email: <input type="email" id="email" placeholder="Example@gmail.com" required /></label>
           <label id="number-label">Enter your age<input type="number" id="number" placeholder="Age" min="0" max="120" required /></label>
         </fieldset>
       </div>
@@ -44,22 +44,22 @@
       <div id="form-rating" class="form-section">
         <fieldset>
           <legend>How do you like this survey?</legend>
-          <label><input value="great" type="radio" name="success" class="inline" />Its Great!</label>
-          <label><input value="good" type="radio" name="success" class="inline" />Its good</label> 
-          <label><input value="neutral" type="radio" name="success" class="inline" />Neutral</label> 
-          <label><input value="bad" type="radio" name="success" class="inline" />It could be better</label> 
-          <label><input value="worst" type="radio" name="success" class="inline" />It is Terrible!</label> 
-          <label>Give any suggestions for this form here:<textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="ex. 'Add different Themes!!'" ></textarea></label>
+          <label for="great"><input value="great" type="radio" name="success" id="great" class="inline" />Its Great!</label>
+          <label for="good"><input value="good" type="radio" name="success" id="good" class="inline" />Its good</label> 
+          <label for="neutral"><input value="neutral" type="radio" name="success" id="neutral" class="inline" />Neutral</label> 
+          <label for="bad"><input value="bad" type="radio" name="success" id="bad" class="inline" />It could be better</label> 
+          <label for="worst"><input value="worst" type="radio" name="success" id="worst" class="inline" />It is Terrible!</label> 
+          <label class="expand" for="suggestions">Give any suggestions for this form here:<textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="ex. 'Add different Themes!!'" ></textarea></label>
         </fieldset>
       </div>
       <div id="next-project" class="form-section">
         <fieldset>
           <legend>Which projects should I make?</legend>
-          <label><input value="calc" type="checkbox" class="inline" />Calculator</label>
-          <label><input value="paint" type="checkbox" class="inline" />Painting!</label>
-          <label><input value="quiz" type="checkbox" class="inline" />Quiz</label>
-          <label><input value="portfolio" type="checkbox" class="inline" />Finsh your portfolio!</label>
-          <label>Give any suggestions for what I should work on here: 
+          <label for="calc"><input value="calc" type="checkbox" id="calc" class="inline" />Calculator</label>
+          <label for="paint"><input value="paint" type="checkbox" id="paint" class="inline" />Painting!</label>
+          <label for="quiz"><input value="quiz" type="checkbox" id="quiz" class="inline" />Quiz</label>
+          <label for="port"><input value="portfolio" type="checkbox" id="port" class="inline" />Finsh your portfolio!</label>
+          <label class="expand" for="suggest-improve">Give any suggestions for what I should work on here: 
             <textarea id="suggest-improve" name="suggest-improve" rows="3" cols="30"></textarea>
           </label>
         </fieldset> 
