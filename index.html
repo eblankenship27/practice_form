@@ -6,24 +6,44 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Page Title</h1>
+    <h1 id="title">Evan's Form</h1>
     <p id="description">
-
+      This is a form used to practice working with HTML and CSS to build my foundamentals better.
     </p>
     <form id="survey-form">
-      <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required /></label>
-      <label id="email-label">Email: <input type="email" id="email" pattern="[a-z,0-9]{8,}" placeholder="example@gmail.com" required /></label>
-      <label id="number-label">Enter your age<input type="number" id="number" placeholder="Age" required /></label>
-      <label>How did you get to this form? <select id="dropdown" required>
-        <option disabled selected value="">(Select one)</option>
-        <option value="">Sent to me</option>
-        <option>Accessed from your Website</option>
-        <option>Other</option>
-      </select></label>
-      <legend>How do you like this survey?</legend>
-      <label><input type="radio" name="success" /></label>
-      <label><input type="radio" name="success" /></label> 
-      <input type="submit" value="Submit" />
+      <div id="p-info" class="form-section">
+        <fieldset>
+          <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required /></label>
+          <label id="email-label">Email: <input type="email" id="email" placeholder="example@gmail.com" required /></label>
+          <label id="number-label">Enter your age<input type="number" id="number" placeholder="Age" required /></label>
+        </fieldset>
+      </div>
+      <div id="access" class="form-section">
+        <fieldset>
+          <label>How did you get to this form? <select id="dropdown" required>
+            <option disabled selected value="">(Select one)</option>
+            <option value="">Sent to me</option>
+            <option>Accessed from Website</option>
+            <option>Other</option>
+          </select></label>
+        </fieldset>
+      </div>
+      <div id="form-rating" class="form-section">
+        <fieldset>
+          <legend>How do you like this survey?</legend>
+          <label><input type="radio" name="success" /></label>
+          <label><input type="radio" name="success" /></label> 
+        </fieldset>
+      </div>
+      <div id="suggestions" class="form-section">
+        <fieldset>
+          <legend></legend>
+          <label><input type="checkbox" /></label>
+          <label><input type="checkbox" /></label>
+          <label><textarea></textarea></label>
+        </fieldset>
+      </div>
+      <input id="submit" type="submit" value="Submit" />
     </form>
   </body>
 </html>
