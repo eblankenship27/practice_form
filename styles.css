@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: 1em;
+    background-color: #1b1b32;
+    color: #f1f1f1;
+}
+
+header {
+    margin: 1em auto;
+    text-align: center;
+    border: 1px dotted 
+}
+
+form {
+    width: 75vw;
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid green;
+    
+}
+
+fieldset {
+    border: 1;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    padding: 0.5rem;
+    
+}
